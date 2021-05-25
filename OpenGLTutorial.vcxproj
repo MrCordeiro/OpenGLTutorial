@@ -92,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -121,6 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,8 +147,59 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="EBO.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="shaderClass.cpp" />
+    <ClCompile Include="stb.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="VAO.cpp" />
+    <ClCompile Include="VBO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="default.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="default.frag" />
+    <None Include="light.frag" />
+    <None Include="light.vert" />
+    <None Include="Resources\models\bunny\scene.bin" />
+    <None Include="Resources\models\bunny\scene.gltf" />
+    <None Include="Resources\models\grindstone\scene.bin" />
+    <None Include="Resources\models\grindstone\scene.gltf" />
+    <None Include="Resources\models\map\scene.bin" />
+    <None Include="Resources\models\map\scene.gltf" />
+    <None Include="Resources\models\scroll\scene.bin" />
+    <None Include="Resources\models\scroll\scene.gltf" />
+    <None Include="Resources\models\sword\scene.bin" />
+    <None Include="Resources\models\sword\scene.gltf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="EBO.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="shaderClass.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="VAO.h" />
+    <ClInclude Include="VBO.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\brick.png" />
+    <Image Include="Resources\models\bunny\baseColor.png" />
+    <Image Include="Resources\models\bunny\metallicRoughness.png" />
+    <Image Include="Resources\models\grindstone\textures\Main_baseColor.jpeg" />
+    <Image Include="Resources\models\grindstone\textures\Main_metallicRoughness.png" />
+    <Image Include="Resources\models\grindstone\textures\Main_normal.png" />
+    <Image Include="Resources\models\map\textures\Material.001_baseColor.png" />
+    <Image Include="Resources\models\scroll\textures\lambert4SG_baseColor.png" />
+    <Image Include="Resources\models\sword\textures\Object001_mtl_baseColor.jpeg" />
+    <Image Include="Resources\planks.png" />
+    <Image Include="Resources\planksSpec.png" />
+    <Image Include="sushi-cat.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

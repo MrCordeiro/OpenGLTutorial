@@ -13,6 +13,42 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\Shaders">
+      <UniqueIdentifier>{8321a58a-255b-47f5-b111-32eae86c4ee1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources">
+      <UniqueIdentifier>{b7e3dc2f-09c0-4c63-95c4-43080b92bfb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models">
+      <UniqueIdentifier>{28aabd67-c336-4843-87ff-8bb7a7088c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models\bunny">
+      <UniqueIdentifier>{17bb70aa-5374-46dd-b605-6f7b183a6e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models\grindstone">
+      <UniqueIdentifier>{e44ba805-469d-4c50-aed2-a48ce38bb897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models\map">
+      <UniqueIdentifier>{778ee05a-03f8-408b-9dc0-2d58cbbc8ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models\scroll">
+      <UniqueIdentifier>{e3fac32d-9afd-4b03-b7c2-5717d44844c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models\sword">
+      <UniqueIdentifier>{5eb5b0fb-d8e7-4c1b-b8e8-517871ecc033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models\grindstone\textures">
+      <UniqueIdentifier>{8f7e681a-d072-4112-8d9b-69e9ff0b4dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models\map\textures">
+      <UniqueIdentifier>{38c1fdfb-025b-492d-bbf2-51a57852b645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models\sword\textures">
+      <UniqueIdentifier>{cd964928-cfda-45ac-b40f-39190ebf4968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resources\models\scroll\textures">
+      <UniqueIdentifier>{cca0a2a3-cb71-47d0-8203-75bdc4fec586}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glad.c">
@@ -21,5 +57,142 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="shaderClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VAO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="default.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="default.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="light.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="light.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Resources\models\bunny\scene.bin">
+      <Filter>Resource Files\Resources\models\bunny</Filter>
+    </None>
+    <None Include="Resources\models\grindstone\scene.bin">
+      <Filter>Resource Files\Resources\models\grindstone</Filter>
+    </None>
+    <None Include="Resources\models\map\scene.bin">
+      <Filter>Resource Files\Resources\models\map</Filter>
+    </None>
+    <None Include="Resources\models\scroll\scene.bin">
+      <Filter>Resource Files\Resources\models\scroll</Filter>
+    </None>
+    <None Include="Resources\models\sword\scene.bin">
+      <Filter>Resource Files\Resources\models\sword</Filter>
+    </None>
+    <None Include="Resources\models\bunny\scene.gltf">
+      <Filter>Resource Files\Resources\models\bunny</Filter>
+    </None>
+    <None Include="Resources\models\grindstone\scene.gltf">
+      <Filter>Resource Files\Resources\models\grindstone</Filter>
+    </None>
+    <None Include="Resources\models\map\scene.gltf">
+      <Filter>Resource Files\Resources\models\map</Filter>
+    </None>
+    <None Include="Resources\models\scroll\scene.gltf">
+      <Filter>Resource Files\Resources\models\scroll</Filter>
+    </None>
+    <None Include="Resources\models\sword\scene.gltf">
+      <Filter>Resource Files\Resources\models\sword</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="shaderClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="sushi-cat.jpg">
+      <Filter>Resource Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\brick.png">
+      <Filter>Resource Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\planks.png">
+      <Filter>Resource Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\planksSpec.png">
+      <Filter>Resource Files\Resources</Filter>
+    </Image>
+    <Image Include="Resources\models\bunny\metallicRoughness.png">
+      <Filter>Resource Files\Resources\models\bunny</Filter>
+    </Image>
+    <Image Include="Resources\models\bunny\baseColor.png">
+      <Filter>Resource Files\Resources\models\bunny</Filter>
+    </Image>
+    <Image Include="Resources\models\grindstone\textures\Main_baseColor.jpeg">
+      <Filter>Resource Files\Resources\models\grindstone\textures</Filter>
+    </Image>
+    <Image Include="Resources\models\grindstone\textures\Main_metallicRoughness.png">
+      <Filter>Resource Files\Resources\models\grindstone\textures</Filter>
+    </Image>
+    <Image Include="Resources\models\grindstone\textures\Main_normal.png">
+      <Filter>Resource Files\Resources\models\grindstone\textures</Filter>
+    </Image>
+    <Image Include="Resources\models\map\textures\Material.001_baseColor.png">
+      <Filter>Resource Files\Resources\models\map\textures</Filter>
+    </Image>
+    <Image Include="Resources\models\scroll\textures\lambert4SG_baseColor.png">
+      <Filter>Resource Files\Resources\models\scroll\textures</Filter>
+    </Image>
+    <Image Include="Resources\models\sword\textures\Object001_mtl_baseColor.jpeg">
+      <Filter>Resource Files\Resources\models\sword\textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>
